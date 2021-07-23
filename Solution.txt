@@ -1,0 +1,30 @@
+$ mkdir GitAssesment
+$ cd GitAssesment/
+$ git init
+$ touch textFile1.txt
+$ touch textFile2.txt
+$ touch textFile3.txt
+$ notepad textFile1.txt (Added text in the file)
+$ notepad textFile2.txt (Added text in the file)
+$ notepad textFile3.txt (Added text in the file)
+$ git checkout -b dev
+$ git add textFile3.txt
+$ git checkout -b master
+$ git checkout -b test
+$ git add textFile1.txt
+$ git add textFile2.txt
+$ git commit -m "First Commit to Test branch"
+$ git checkout -b master
+$ notepad textFile1.txt (Modified the file)
+$ git status
+$ git merge --squash test
+$ git merge --squash dev
+$ git add .
+$ git commit -m "Test and Dev branches merged"
+$ git remote add origin https://github.com/karan5511/GitAssesment.git
+$ git branch -M main
+$ git push -u origin main
+$ cd ~
+$ mkdir GitAssesmentClone
+$ git clone https://github.com/karan5511/GitAssesment.git
+$ touch Solution.txt
